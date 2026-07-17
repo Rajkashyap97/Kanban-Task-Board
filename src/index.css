@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Blueprint palette */
+  --ink-navy: #0b2545;
+  --ink-navy-deep: #081a33;
+  --grid-line: rgba(255, 255, 255, 0.06);
+  --paper: #fbf8f1;
+  --paper-shadow: rgba(8, 26, 51, 0.35);
+  --steel: #8da9c4;
+  --steel-bright: #c3d7e8;
+  --text-ink: #1b263b;
+  --text-muted: #5b6b81;
+
+  --priority-high: #d64550;
+  --priority-high-bg: #fbe4e4;
+  --priority-medium: #d99a3b;
+  --priority-medium-bg: #fbeed9;
+  --priority-low: #3e8e7e;
+  --priority-low-bg: #e0f0ec;
+
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --radius: 4px;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-ink);
+  background-color: var(--ink-navy);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+select {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--steel-bright);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
