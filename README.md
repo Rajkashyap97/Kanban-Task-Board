@@ -1,4 +1,11 @@
 # Kanban Task Board
+## 🚀 Live Demo
+
+**Live Website:** https://kanban-task-board-mu-snowy.vercel.app/
+
+## 📂 GitHub Repository
+
+https://github.com/Rajkashyap97/Kanban-Task-Board
 
 A Trello-style task board built with **React 19 + Vite**, covering all three
 sprint phases:
